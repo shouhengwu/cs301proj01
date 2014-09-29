@@ -3,8 +3,6 @@
 #include "list.h"
 
 
-//CHANGE: change all **head to *head;
-
 void list_clear(struct node *list) {
     while (list != NULL) {
         struct node *tmp = list;
