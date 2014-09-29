@@ -66,28 +66,6 @@ void list_smart_append(int candidate, struct node **head) {
 
 }//end list_smart_append
 
-
-
-
-	/*
-	struct node *curr = *head;
-	struct node *prev = NULL;
-	while(NULL != curr && candidate < curr->value){
-		prev = curr;
-		curr = curr->next;
-	}//end while
-	
-	
-	if(NULL == curr){//if we are at the end of the linked list
-		appended_node->next = NULL;
-		prev->next = appended_node;
-	}else{
-		struct node *curr_next = curr->next;
-		curr->next = appended_node;
-		appended_node->next = curr_next;
-	}//end if-else
-	*/
-
 int get_num_tokens(const char *s){
 
 	char *copy = strdup(s);
